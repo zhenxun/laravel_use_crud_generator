@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
+    Route::get('/', function(){
+        return view('admin.dashboard');
+    });
+
     Route::resource('posts', 'PostsController');
 });

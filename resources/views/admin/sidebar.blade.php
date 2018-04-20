@@ -5,10 +5,15 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav" role="tablist">
+            <ul class="nav navbar-nav" role="tablist">
                 <li role="presentation">
                     <a href="{{ url('/admin') }}">
                         Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/admin/posts') }}">
+                        新增文章
                     </a>
                 </li>
             </ul>
